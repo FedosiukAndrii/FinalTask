@@ -1,40 +1,59 @@
 #root {
-  display: flex;
-  height: 100%;
+    display: flex;
+    height: 100%;
 }
 
 .todo {
-  padding: 30px;
+    padding: 30px;
 }
 
 .todo-card {
-  min-width: 300px;
-  margin: 0 auto;
+    min-width: 300px;
+    margin: 0 auto;
 }
 
 .todo-list {
-  padding: 0;
+    padding: 0;
 }
 
 .todo-item {
-  list-style: none;
-  margin-bottom: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    list-style: none;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .todo-form {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 .todo-form > div:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .todo-form-input {
-  flex: 1!important;
+    flex: 1 !important;
 }
+
 .todo-form-actions {
-  flex: 0!important;
+    flex: 0 !important;
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-checked) {
+    background-color: cornflowerblue;
+}
+.ant-checkbox-wrapper-checked {
+    text-decoration: line-through;
+    background-color: lime;
+}
+
+.flex-align-around {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.delete-todo {
+    width:20px;
 }
